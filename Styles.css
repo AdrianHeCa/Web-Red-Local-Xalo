@@ -1,0 +1,219 @@
+
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+}
+
+:root {
+    --mainTrans:all 0.3s ease-in-out;
+    --letterSpacing: 0.5rem;
+    --mainColor: red;
+    --secondaryColor: white;
+    --terciaryColor: gray;
+}
+
+/* Helper/utility classes */
+
+a {
+    text-decoration: none;
+}
+
+.text-white {
+    color: var(--secondaryColor);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-primary {
+    color: var(--mainColor);
+}
+
+/* Clearfix */
+.clearfix::after, .clearfix::before{
+    content: '';
+    clear: both;
+    display: table;
+}
+/* Globals */
+/* Nav */
+
+/* Header */
+
+.header {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/Imagen\ de\ cosas\ en\ la\ mesa.jpg) center/cover no-repeat fixed;
+    position: relative;
+}
+
+/* Banner */
+
+.banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.banner-subtitle {
+    font: 2rem;
+    color: var(--mainColor);
+    font-weight: 900;
+    font-size: 2rem;
+    animation: banner-subtitle 3s;
+}
+
+.banner-title {
+    font-size: 3.2rem;
+    color: white;
+    margin-top: 0.1rem;
+    animation: banner-title 1.5s;
+}
+
+.main-btn, .banner-btn {
+    display: inline-block;
+    background: var(--mainColor);
+    text-transform: uppercase;
+    border: 3px solid var(--mainColor);
+    padding: 0.8rem 1.2rem;
+    font-size: 20px;
+    color:coral;
+    font-weight: bold;
+    outline: 0.2rem solid var(--mainColor);
+    outline-offset: 5px;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: 0.5s;
+}
+
+.main-btn,.banner-btn:hover {
+    color: var(--secondaryColor);
+    transform: scale(1.1);
+    outline-offset: 2px;
+}
+
+.banner-btn {
+    padding: 1.2rem 1.8rem;
+    animation: banner-btn 3s;
+}
+
+/* Animations */
+
+@keyframes banner-subtitle {
+    0%{
+        transform: translateY(3rem);
+    }
+    20%{
+        transform: translateY(3rem);
+    }
+    45%{
+        transform: translateY(-0.5rem);
+    }
+    100%{
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes banner-title {
+    0%{
+        transform: translateY(-5rem);
+    }
+    75%{
+        transform: translateY(0.5rem);
+    }
+    100%{
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes banner-btn {
+    0%{
+        transform: translateY(-10rem);
+    }
+    20%{
+        transform: translateY(-10rem);
+    }
+    45%{
+        transform: translateY(0.5rem);
+    }
+    100%{
+        transform: translateY(0rem);
+    }
+}
+
+/* End of animations */
+/* End of header */
+
+/* Content divider */
+
+.content-divider {
+    height: 0.5rem;
+    background: var(--mainColor);
+}
+
+/* End of content divider */
+
+/* Parts */
+
+.what {
+    background-color: var(--secondaryColor);
+}
+
+.part {
+    padding: 2.5rem 0;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.part-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+.part-title {
+    font: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.5rem;
+    color: var(--mainColor);
+    transition: 0.5s;
+}
+
+.part-text {
+    max-width: 13rem;
+    margin: 0 auto;
+}
+
+.part:hover {
+    background-color: var(--mainColor);
+}
+
+.part:hover .part-title {
+    color: var(--secondaryColor);
+}
+
+.part:hover .part-icon {
+    transform: translateY(-0.5rem);
+}
+
+@media screen and (min-width:576px) {
+    .part {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .part {
+        width: 25%;
+    }
+}
+
+/* End of Parts */
