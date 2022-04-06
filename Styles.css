@@ -41,15 +41,42 @@ a {
 }
 /* Globals */
 /* Nav */
-.nav {
+
+nav ul {
     display: flex;
     background-color: rgb(36, 36, 36);
 }
-.nav-btn {
-    margin-left: 10%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+
+nav ul li {
+    padding: 1rem 0rem 1rem 0rem;
+    color: white;
+    font-size: 20px;
+    list-style: none;
 }
+
+nav ul li a {
+    color: white;
+    font-weight: 900;
+    padding: 1rem 3rem 1rem 3rem
+}
+
+nav ul li a:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+@media screen and (max-width:35rem) {
+    nav ul {
+        display: grid;
+    }
+    nav ul li {
+        padding: 1rem 0 1rem 0;
+        margin: 0 auto;
+    }
+    nav ul li a {
+        padding: 1rem 14rem 1rem 14rem;
+    }
+}
+
 /* End of nav */
 /* Header */
 
@@ -212,14 +239,14 @@ a {
     transform: translateY(-0.5rem);
 }
 
-@media screen and (min-width:576px) {
+@media screen and (min-width:35rem) {
     .part {
         float: left;
         width: 50%;
     }
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:75rem) {
     .part {
         width: 25%;
     }
