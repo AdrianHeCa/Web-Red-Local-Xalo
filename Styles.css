@@ -13,6 +13,7 @@
     --mainColor: rgb(118, 37, 172);
     --secondaryColor: white;
     --terciaryColor: gray;
+    --backgroundColor: rgb(36, 36, 36);
 }
 
 /* Helper/utility classes */
@@ -44,7 +45,7 @@ a {
 
 nav ul {
     display: flex;
-    background-color: rgb(36, 36, 36);
+    background-color: var(--backgroundColor);
 }
 
 nav ul li {
@@ -197,7 +198,7 @@ nav ul li a:hover {
 /* Parts */
 
 .what {
-    background-color: var(--secondaryColor);
+    background-color: var(--backgroundColor);
 }
 
 .part {
@@ -211,6 +212,7 @@ nav ul li a:hover {
     margin-bottom: 1.5rem;
     transition: 0.5s;
     display: inline-block;
+    color: var(--secondaryColor);
 }
 
 .part-title {
@@ -225,6 +227,7 @@ nav ul li a:hover {
 .part-text {
     max-width: 13rem;
     margin: 0 auto;
+    color: var(--secondaryColor);
 }
 
 .part:hover {
