@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Cabin', sans-serif;
+    color: var(--secondaryColor);
 }
 
 :root {
@@ -61,7 +62,15 @@ nav ul li a {
     padding: 1rem 3rem 1rem 3rem
 }
 
-nav ul li a:hover {
+.current {
+    background-color: var(--mainColor);
+}
+
+.current:hover {
+    background-color: rgb(138, 57, 192);
+}
+
+nav ul li:not(.current) a:hover {
     background-color: rgb(50, 50, 50);
 }
 
@@ -197,7 +206,7 @@ nav ul li a:hover {
 
 /* Parts */
 
-.what {
+.parts {
     background-color: var(--backgroundColor);
 }
 
@@ -256,3 +265,59 @@ nav ul li a:hover {
 }
 
 /* End of Parts */
+
+/* Comienzo de memoria */
+
+.memoria {
+    background-color: var(--backgroundColor);
+}
+
+.contenedor-memoria {
+    display: flex;
+    height: 30rem;
+}
+
+.texto-memoria {
+    width: 50%;
+    height: 100%;
+    padding: 0rem 0rem;
+}
+
+.texto-memoria h1 {
+    margin: 7% 0 4% 10%;
+    font-size: 2.2rem;
+}
+
+.texto-memoria p {
+    margin: 0 15% 0 15%;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.imagen-memoria-1 {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50%;
+}
+
+.imagen-memoria-2 {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 50%;
+}
+
+.imagen-memoria img {
+    width: 100%;
+    position: relative;
+    transform: translate(0, -20%);
+}
+
+/* Fin de memoria */
