@@ -83,7 +83,7 @@ nav ul li:not(.current) a:hover {
         margin: 0 auto;
     }
     nav ul li a {
-        padding: 1rem 14rem 1rem 14rem;
+        padding: 1rem 40vw 1rem 40vw;
     }
 }
 
@@ -272,7 +272,7 @@ nav ul li:not(.current) a:hover {
     background-color: var(--backgroundColor);
 }
 
-.contenedor-memoria {
+.contenedor-memoria{
     display: flex;
     height: 30rem;
 }
@@ -322,6 +322,34 @@ nav ul li:not(.current) a:hover {
     width: 100%;
     position: relative;
     transform: translate(0, -20%);
+}
+
+@media screen and (max-width:35rem) {
+    .contenedor-memoria {
+        display: inline-block;
+        height: 35rem;
+    }
+    .texto-memoria {
+        width: 100%;
+    }
+    .imagen-memoria-1 {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
+    .imagen-memoria-2 {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+    }
 }
 
 /* Fin de memoria */
