@@ -50,16 +50,17 @@ nav ul {
 }
 
 nav ul li {
-    padding: 1rem 0rem 1rem 0rem;
     color: white;
     font-size: 20px;
     list-style: none;
+    text-align: center;
+    display: flex;
 }
 
 nav ul li a {
     color: white;
     font-weight: 900;
-    padding: 1rem 3rem 1rem 3rem
+    padding: 1rem 3rem 1rem 3rem;    
 }
 
 .current {
@@ -77,13 +78,12 @@ nav ul li:not(.current) a:hover {
 @media screen and (max-width:35rem) {
     nav ul {
         display: grid;
-    }
-    nav ul li {
-        padding: 1rem 0 1rem 0;
-        margin: 0 auto;
+        justify-items: center;
+        width: 100%;
     }
     nav ul li a {
-        padding: 1rem 40vw 1rem 40vw;
+        padding: 1rem 35vw 1rem 35vw;
+        text-align: center;
     }
 }
 
@@ -224,6 +224,11 @@ nav ul li:not(.current) a:hover {
     color: var(--secondaryColor);
 }
 
+.part img {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
 .part-title {
     font: 0.9rem;
     font-weight: bold;
@@ -353,3 +358,37 @@ nav ul li:not(.current) a:hover {
 }
 
 /* Fin de memoria */
+
+/* Comienzo de foto grupal */
+
+.nuestro-equipo {
+    background-color: var(--backgroundColor);
+    text-align: center;
+    padding: 1.5rem 0 1.5rem 0;
+    font-size: larger;
+}
+
+.foto-grupal {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    }
+
+.texto-foto-grupal {
+    background-color: var(--backgroundColor);
+    padding: 3rem 10rem 5rem 10rem;
+    text-align: center;
+    font-size: large;
+}
+
+@media screen and (max-width:35rem) {
+    .texto-foto-grupal {
+        padding: 2rem 2rem 3rem 2rem;
+    }
+}
+
+/* Fin de foto grupal */
