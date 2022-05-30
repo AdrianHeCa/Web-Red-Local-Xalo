@@ -392,3 +392,21 @@ nav ul li:not(.current) a:hover {
 }
 
 /* Fin de foto grupal */
+
+/* Inicio de las preguntas */
+
+.preguntas {
+    background-color: var(--backgroundColor);
+}
+
+.pregunta {
+    padding: 3rem 0rem 2rem 15rem;
+    font-size: 22px;
+}
+
+.respuesta {
+    padding-left: 20rem;
+    font-size: 18px;
+}
+
+/* Fin de las preguntas */
