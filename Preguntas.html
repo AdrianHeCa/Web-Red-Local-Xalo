@@ -31,7 +31,7 @@
                 <h3 class="banner-subtitle">XALO</h3>
             </div>
             <div style="overflow: hidden; padding-bottom: 8rem;">
-                <h1 class="banner-title">Memoria</h1>
+                <h1 class="banner-title">Preguntas</h1>
             </div>
         </div>
     </header>
@@ -41,15 +41,79 @@
 <!-- End of content divider -->
 <!-- Comienzo de preguntas -->
 <section class="preguntas">
+<!-- Preguntas AP -->
+    <h2>Preguntas AP</h2>
     <!-- Pregunta -->
-    <h3 class="pregunta">¿Insertar pregunta aquí?</h3>
-    <p class="respuesta">En efecto mi pana, si no nos suspenden.</p>
+    <h3 class="pregunta"><li>Características del AP</li></h3>
+    <p class="respuesta">Versión de Wifi: legacy 802.11b/g</p>
+    <p class="respuesta">Número màximo y recomendado de dispositivos conectados: 100/80</p>
+    <p class="respuesta">Precio: 130€</p>
+    <p class="respuesta">Velocidad: 300 Mbps</p>
     <!-- Pregunta -->
-    <h3 class="pregunta">¿Insertar pregunta aquí?</h3>
-    <p class="respuesta">En efecto mi pana, si no nos suspenden.</p>
+    <h3 class="pregunta"><li>¿Como podemos acceder al AP desde un ordenador conectado físicamente o por Wifi?</li></h3>
+    <p class="respuesta">Por la ip 192.168.0.50, además de esto, tendremos que estar en el mismo rango de esta.</p>
     <!-- Pregunta -->
-    <h3 class="pregunta">¿Insertar pregunta aquí?</h3>
-    <p class="respuesta">En efecto mi pana, si no nos suspenden.</p>
+    <h3 class="pregunta"><li>¿Como podemos cambiar la IP por defecto del AP a una que esté dentro de la red?</li></h3>
+    <p class="respuesta">Dentro de configuración básica dentro de la página del ap se puede modificar la ip, el nombre y otros aspectos.</p>
+    <!-- Pregunta -->
+    <h3 class="pregunta"><li>El AP puede tener 4 modos de funcionamiento, cuáles son? cómo actuan cada uno de ellos?</li></h3>
+    <p class="respuesta"><b>Maestro</b> (Root): opera de forma parecida a un adaptador inalámbrico. <br>
+        <b>Repetidor</b> (Repeater): varios APs envían información entre sí, cubriendo más área. <br>
+        <b>Puente (punto a punto)</b>(Bridge): conexión punto a punto entre dos APs. <br>
+        <b>Puente (punto a multipunto)</b>: conexión punto a punto de varios APs hacia uno que está conectado a todos.</p> 
+    <!-- Pregunta -->
+    <h3 class="pregunta"><li>¿Cómo podemos crear nuevos SSID? ¿Qué son los SSID?</li></h3>
+    <p class="respuesta">Un SSID es una secuencia de hasta 32 octetos que ayuda a identificar dispositivos en una red inalámbrica. Uno nuevo se puede crear desde la configuración de red.</p>
+    <!-- Pregunta -->
+    <h3 class="pregunta"><li>¿Cómo podemos establecer un sistema de seguridad por credenciales para acceder al SSID?</li></h3>
+    <p class="respuesta">Desde la configuración de red se puede elegir qué permisos tiene cada usuario, así entonces se puede poner qué usuarios tienen acceso a las opciones del SSID.</p>
+    <!-- Pregunta -->
+    <h3 class="pregunta"><li>¿Qué modo de seguridad es el más recomendable, WEP, WPA o WPA2? ¿Por qué?</li></h3>
+    <p class="respuesta">El más recomendable es WPA2, esto debido a que es el modo más reciente y seguro entre estos. Su gran seguridad se debe al extenso uso de encriptación, tanto para los datos propios de la red como los que se envían.</p>
+    <!-- Pregunta -->
+    <h3 class="pregunta"><li>¿Se pueden crear distintos VLAN? ¿Cómo?</li></h3>
+    <p class="respuesta">Se pueden crear diferentes VLAN a través de un switch configurable, desde este se puede seleccionar qué conexiones pertenecen a qué VLANs.</p>
+    <!-- Pregunta -->
+    <h3 class="pregunta"><li>¿Cómo podemos configurar el DHCP de la AP reservando 20 direcciones estáticas y otras dinámicas? ¿Cómo se puede configurar el modo estático dentro del DHCP?</li></h3>
+    <p class="respuesta">Desde la configuración avanzada del AP entramos en reservas de IPs DHCP, desde aquí podremos elegir los dispositivos que reciben IPs estáticas y los que la reciben por DHCP.</p>
+    <!-- Pregunta -->
+    <h3 class="pregunta"><li>¿Cómo filtrar dispositivos permitiendo que se conecten o no a la red?</li></h3>
+    <p class="respuesta">A través de la configuración del AP, en el apartado de la Whitelist podemos elegir cuales se pueden conectar, y en la Blacklist los que no se pueden conectar.</p>
+<!-- Preguntas Switch -->
+    <h2>Preguntas Switch</h2>
+    <!-- Pregunta -->
+    <h3 class="pregunta"><li>¿Cómo acceder al switch desde un ordenador conectado físicamente o por Wifi?</li></h3>
+    <p class="respuesta">Primero hay que resetear el AP, buscamos la IP predefinida por google o donde sea, tambien tenemos que cambiar la IP de nuestro equipo para que estén dentro de la misma red, la pegamos en google mientras estamos conectados al AP, nos saldra una pagina donde pondremos el usuario y la contraseña (admin) dede hay en configuracion basica podemos configurarla.</p>
+    <!-- Pregunta -->
+    <h3 class="pregunta"><li>¿Qué es el mirroring? ¿Se puede realizar en el switch? ¿Cómo?</li></h3>
+    <p class="respuesta">Es una manera de mostrar la pantalla del dispositivo móvil utilizando la tecnología Miracast. Si, creamos una VLAN, añadimos un puerto origen y un puerto destino a la VLAN, configuramos la dirección IP,  configuramos la duplicación de puertos  en el puerto de origen al puerto destino.</p>
+    <!-- Pregunta -->
+    <h3 class="pregunta"><li>VLAN: se deben crear 2 subredes virtuales (VLAN) seleccionando las bocas oportunas y después probarlo.</li></h3>
+    <p class="respuesta">Para crear una segunda subred primero hay que meterse en el switch, desde el tenemos que crear las diferentes, limitando la mascara a la distancia que querramos.</p>
+<!-- Preguntas Router -->
+    <h2>Preguntas Router</h2>
+    <!-- Pregunta -->
+    <h3 class="pregunta"><li>En el Router hay dos puertos WLAN. ¿Para qué sirven? ¿Cómo se configuran?</li></h3>
+    <p class="respuesta">Estos puertos sirven para conectar el router al internet. Se configuran desde la configuración del router.</p>
+    <!-- Pregunta -->
+    <h3 class="pregunta"><li>¿Cómo configurar un rango de direcciones dinámicas y otro estático?</li></h3>
+    <p class="respuesta">Desde la configuración avanzada del router entramos en reservas de IPs DHCP, desde aquí podremos elegir los dispositivos que reciben IPs estáticas y los que la reciben por DHCP.</p>
+    <!-- Pregunta -->
+    <h3 class="pregunta"><li>¿Para qué sirve la pestaña DHCP CLient?</li></h3>
+    <p class="respuesta">SIrve para monitorizar qué dispositivos están conectados a la red, tanto alámbrica como inalámbricamente.</p>
+    <!-- Pregunta -->
+    <h3 class="pregunta"><li>¿Y la de DHCP Reservation?</li></h3>
+    <p class="respuesta">Esta tiene la función de seleccionar los dispositivos que quieres que tengan la misma IP siempre.</p>
+    <!-- Pregunta -->
+    <h3 class="pregunta"><li>¿Cómo configurar las SSID?</li></h3>
+    <p class="respuesta">Se pueden configurar desde la pestaña de seguridad de la red.</p>
+    <!-- Pregunta -->
+    <h3 class="pregunta"><li>¿Qué es WDS?</li></h3>
+    <p class="respuesta">Es un sistema que permite la conexión de varios APs de forma inalámbrica en una red. Permitiendo ampliar esta sin necesidad de cableado extra.</p>
+    <!-- Pregunta -->
+    <h3 class="pregunta"><li>¿Cómo funciona el MAC filtering?</li></h3>
+    <p class="respuesta">Funciona grácias a una base de datos con la dirección MAC de cada tarjeta de red. Cada dispositivo que quiera conectarse a la red, ha de tener su dirección permitida en la base de datos. </p>
+    <div style="padding-bottom: 15rem;"></div>
 </section>
 <!-- Fin de preguntas -->
 </body>

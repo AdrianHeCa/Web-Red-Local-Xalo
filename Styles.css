@@ -92,7 +92,7 @@ nav ul li:not(.current) a:hover {
 
 .header {
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/Imagen\ de\ cosas\ en\ la\ mesa.jpg) center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/Epicum.jpg) center/cover no-repeat fixed;
     position: relative;
 }
 
@@ -399,13 +399,23 @@ nav ul li:not(.current) a:hover {
     background-color: var(--backgroundColor);
 }
 
+.preguntas h2 {
+    padding: 5rem 0 0rem 15rem
+}
+
 .pregunta {
-    padding: 3rem 0rem 2rem 15rem;
-    font-size: 22px;
+    padding: 3rem 20rem 2rem 20rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.pregunta li {
+    list-style: square;
 }
 
 .respuesta {
-    padding-left: 20rem;
+    padding-left: 25rem;
+    padding-right: 20rem;
     font-size: 18px;
 }
 
