@@ -455,6 +455,22 @@ nav ul li:not(.current) a:hover {
 
 .precio {
     background-color: var(--backgroundColor);
+    padding-bottom: 10rem;
+}
+
+.precio h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 3rem 0 3rem 0;
+}
+
+table {
+    margin: 0 auto;
+    border:  3px solid var(--mainColor);
+}
+
+table th {
+    padding: 0.5rem 1rem 0.5rem 1rem;
 }
 
 /* Fin de precios */
