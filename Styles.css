@@ -216,6 +216,12 @@ nav ul li:not(.current) a:hover {
     transition: 0.5s;
 }
 
+.part-e {
+    padding: 2.5rem 0;
+    text-align: center;
+    transition: 0.5s;
+}
+
 .part-icon {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
@@ -225,6 +231,11 @@ nav ul li:not(.current) a:hover {
 }
 
 .part img {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.part-e img {
     width: 100%;
     margin-bottom: 0.5rem;
 }
@@ -256,8 +267,24 @@ nav ul li:not(.current) a:hover {
     transform: translateY(-0.5rem);
 }
 
+.part-e:hover {
+    background-color: var(--mainColor);
+}
+
+.part-e:hover .part-title {
+    color: var(--secondaryColor);
+}
+
+.part-e:hover .part-icon {
+    transform: translateY(-0.5rem);
+}
+
 @media screen and (min-width:35rem) {
     .part {
+        float: left;
+        width: 33%;
+    }
+    .part-e {
         float: left;
         width: 50%;
     }
@@ -265,6 +292,9 @@ nav ul li:not(.current) a:hover {
 
 @media screen and (min-width:75rem) {
     .part {
+        width: 20%;
+    }
+    .part-e {
         width: 25%;
     }
 }
@@ -420,3 +450,11 @@ nav ul li:not(.current) a:hover {
 }
 
 /* Fin de las preguntas */
+
+/* Inicio de precios */
+
+.precio {
+    background-color: var(--backgroundColor);
+}
+
+/* Fin de precios */
