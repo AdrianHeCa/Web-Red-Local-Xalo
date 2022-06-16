@@ -75,7 +75,7 @@ nav ul li:not(.current) a:hover {
     background-color: rgb(50, 50, 50);
 }
 
-@media screen and (max-width:35rem) {
+@media screen and (max-width:55rem) {
     nav ul {
         display: grid;
         justify-items: center;
@@ -449,6 +449,24 @@ nav ul li:not(.current) a:hover {
     font-size: 18px;
 }
 
+@media screen and (max-width:70rem) {
+    .preguntas h2 {
+        padding: 2rem 0 0 3rem;
+    }
+    
+    .pregunta {
+        padding: 3rem 0rem 2rem 0rem;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .respuesta {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        font-size: 18px;
+    }
+}
+
 /* Fin de las preguntas */
 
 /* Inicio de precios */
@@ -471,6 +489,12 @@ table {
 
 table th {
     padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+@media screen and (max-width:35rem) {
+    table th {
+        padding: 0.5rem 0rem 0.5rem 0rem;
+    }
 }
 
 /* Fin de precios */
